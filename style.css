@@ -1,0 +1,57 @@
+/*:root{
+  --color_darker: #375a64;
+  --color_dark: #88a5b0;
+  --color-light:#ebeff2;
+  --color-highlight:#ff5617; orange 
+}*/
+.header{
+	flex-direction: column;
+}
+
+#logo-senai{
+	height: 35px;
+	background: #375a64;
+}
+
+#descricao{
+	background: #88a5b0; 
+	color:white; 
+	font-size: 10pt
+}
+
+#descricao span{ text-transform: uppercase; }
+.imagem{width:90px; height:90px;}
+p span{margin:10px; color :#88a5b0; font-weight: bold;}
+
+.my-cb{display:flex;}
+.avatar{align-items:center; }
+.aluno{ font-size: 10pt; }
+.nome{text-transform: uppercase;}
+
+/* Parent elemnt (Container) */
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: white; /*TODO: mudar a cor*/
+	margin:10px;
+	margin-bottom: 50px;
+}
+
+.flex-container > div{
+	width: 170px;
+	height: 200px;
+	margin-left:10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	
+	font-size: 10pt; /* 20px*/
+	text-align:center;
+
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #ebeff2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.1);
+	visibility: hidden;
+
+}

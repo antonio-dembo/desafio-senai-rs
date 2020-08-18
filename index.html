@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Front-End SENAI-RS</title>
+  <style> body{ font-family: sans-serif; background-color: #ebeff2;} </style>
+
+</head>
+
+<body onload="exibeParticipantes()">
+  <div class="header">
+    <div id="logo-senai"><img src="imgs/logo_topo.png" alt="logo"></div>
+    <div id="descricao">
+      <span><b>Técnico em Mecatrônica</b></span>- | 111EAD 2019.2 (Filial 10050) | <span>Home da turma</span>
+    </div>
+  </div>
+  <br>
+  <p><span>Participantes</span></p>
+
+  <div class="flex-container">
+    <div class="card" onclick="selecionaUsuario('card1')" id="card1">
+      <span class="my-cb"><input type="checkbox" name="my-cb1" id="my-cb1"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card2')" id="card2">
+      <span class="my-cb"><input type="checkbox" name="my-cb2" id="my-cb2"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card3')" id="card3">
+      <span class="my-cb"><input type="checkbox" name="my-cb3" id="my-cb3"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card4')" id="card4">
+      <span class="my-cb"><input type="checkbox" name="my-cb4" id="my-cb4"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card5')" id="card5">
+      <span class="my-cb"><input type="checkbox" name="my-cb5" id="my-cb5"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card6')" id="card6">
+      <span class="my-cb"><input type="checkbox" name="my-cb6" id="my-cb6"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card7')" id="card7">
+      <span class="my-cb"><input type="checkbox" name="my-cb7" id="my-cb7"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card8')" id="card8">
+      <span class="my-cb"><input type="checkbox" name="my-cb8" id="my-cb8"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card9')" id="card9">
+      <span class="my-cb"><input type="checkbox" name="my-cb9" id="my-cb9"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card10')" id="card10">
+      <span class="my-cb"><input type="checkbox" name="my-cb10" id="my-cb10"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card11')" id="card11">
+      <span class="my-cb"><input type="checkbox" name="my-cb10" id="my-cb10"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card12')" id="card12">
+      <span class="my-cb"><input type="checkbox" name="my-cb12" id="my-cb12"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card13')" id="card13">
+      <span class="my-cb"><input type="checkbox" name="my-cb13" id="my-cb13"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card14')" id="card14">
+      <span class="my-cb"><input type="checkbox" name="my-cb14" id="my-cb14"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+    <div class="card" onclick="selecionaUsuario('card15')" id="card15">
+      <span class="my-cb"><input type="checkbox" name="my-cb15" id="my-cb15"></span>
+      <span class="avatar"><img class="imagem" alt="imagem" ></span><br>
+      <span class="aluno">Aluno</span>
+      <span class="nome"></span>
+    </div>
+
+  </div>
+
+<!--   <br>
+  <button type="button" onclick="obterParticipantes()">Click me</button> -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"> </script>
+</body>
+
+</html>
